@@ -1,0 +1,81 @@
+.lp-subtitle::after , .lp-subtitle::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 4px 10px;
+}
+
+.btn-lp-lihat-menu:hover {
+    border-color: rgb(65, 65, 65) !important;
+    font-weight: 500;
+}
+
+.masonry {
+  columns: 4;
+  column-gap: 16px;
+}
+
+.masonry-item {
+  display: inline-block;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.masonry-item:before {
+  border-radius: 5px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(143, 143, 143, 0.478);
+}
+
+.masonry-item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.masonry-item__body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 30px 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.masonry-item__tag {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-bottom: 5px;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+.nav-link {
+  color: var(--color-default) !important;
+}
+
+@media (max-width: 1200px) {
+  .masonry {
+    columns: 3;
+  }
+}
+
+@media (max-width: 992px) {
+  .masonry {
+    columns: 2;
+  }
+}
